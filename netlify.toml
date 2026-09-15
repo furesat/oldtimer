@@ -1,6 +1,8 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  # Pause automatic Netlify builds. Remove this line to re-enable them.
+  ignore = "exit 0"
 
 [build.environment]
   NODE_VERSION = "20"
